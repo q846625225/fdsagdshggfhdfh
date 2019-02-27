@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap ul{
+            height: 100px;
+            width: 100px;
+            background: blue;
+            border: 1px solid hotpink;
+            line-height: 100px;
+            text-align: center;
+            float: left;
+        }
+        .box1 ul{
+            display: none;
+            height: 300px;
+            width: 100px;
+            background: pink;
+        }
+        .box1 ul li{
+            height: 100px;
+            width: 100px;
+            color: blue;
+            list-style: none;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li class="box1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li class="box2"></li>
+            <li class="box3"></li>
+        </ul>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(".wrap>ul>li").mouseover(function(){
+            $(this).children("ul").slideDown();
+        })
+        $(".wrap>ul>li").mouseout(function(){
+            $(this).children("ul").hide();
+        })
+    </script>
+</body>
+</html>

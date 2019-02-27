@@ -1,0 +1,86 @@
+body{
+	background: #EFF0F1;
+}
+#title {
+	margin: 100px auto;
+	width: 400px;
+	font-size: 16px;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: relative;
+
+}
+#title_list,.title1_div{
+	border-bottom: 1px solid #EFF0F1;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 5px;
+}
+
+#display_ul,#display2{
+	text-align: center;
+}
+
+.title1_span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+	margin-left: 290px;
+}
+.title_span{
+	cursor: pointer;
+}
+.title1_div2{
+	background: #EFF0F1;
+}
+.title1_div2_1,.title1_div2_2{
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 5px;
+}
+.span1{
+	background: #FF9800;
+	display: inline-block;
+	margin-left: 250px;
+	line-height: 20px;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#display2{
+	cursor: pointer;
+}
+#mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: #ccc;
+	opacity: 0.3;
+	display: none;
+	text-align: center;
+	line-height: 1;
+}
+#title>span{
+	position: absolute;
+	left: 150px;
+	top: 0;
+	display: none;
+	background: #fff;
+	width: 100px;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+	color:#000;
+	font-size: 20px;
+	font-weight: 900;
+	opacity: 1;
+	z-index:2
+}
